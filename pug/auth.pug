@@ -3,13 +3,19 @@ html(lang="ru")
     head
         - var seo = {title: 'Авторизация', description: 'Описание страницы авторизации'}
         include includes/_meta
-    body.body
-        .container.body__content
-            a.logo(href="#")
-                svg(width="366" height="86" viewBox="0 0 366 86" fill="none" xmlns="http://www.w3.org/2000/svg")
-                    use(xlink:href="#svg-logo")
+    body.body._ny
+        img.body__ny(src="img/bg_ny.svg" alt="" width="893" height="471")
 
-            form.form(action="#" method="post")
+        .container.body__content
+            a.logo._ny(href="#")
+                .logo__wrap
+                    svg(width="366" height="86" viewBox="0 0 366 86" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        use(xlink:href="#svg-logo")
+                    img.logo__newyear(src="img/logo_newyear.svg" alt="" width="160" height="137")
+
+            form.form._ny(action="#" method="post")
+                img.form__snowcaps(src="img/snowcaps.svg" alt="" width="396" height="72")
+
                 .form__fieldset.form__validate._false
                     span.form__validate-title Каптча
                     | Обязательное поле.

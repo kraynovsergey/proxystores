@@ -36,4 +36,19 @@
 		position: relative;
 		z-index: 2;
 	}
+
+	&__ny {
+		position: absolute;
+		top: 20%;
+		max-width: 100%;
+		z-index: 1;
+		height: auto;
+		display: none;
+	}
+
+	&._ny {
+		& .body__ny {
+			display: block;
+		}
+	}
 }

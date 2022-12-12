@@ -412,6 +412,15 @@ label {
   .body__content {
     position: relative;
     z-index: 2; }
+  .body__ny {
+    position: absolute;
+    top: 20%;
+    max-width: 100%;
+    z-index: 1;
+    height: auto;
+    display: none; }
+  .body._ny .body__ny {
+    display: block; }
 
 .logo {
   display: flex;
@@ -420,10 +429,28 @@ label {
   @media (max-width: 767px) {
     .logo {
       margin-bottom: 30px; } }
+  .logo__wrap {
+    position: relative;
+    display: flex;
+    justify-content: center; }
   .logo svg {
     fill: #FFFFFF;
     max-width: 100%;
     height: auto; }
+  .logo__newyear {
+    position: absolute;
+    left: -23%;
+    top: -78%;
+    display: none;
+    width: 43%;
+    height: auto; }
+  .logo._ny {
+    padding-top: 66px; }
+    @media (max-width: 575px) {
+      .logo._ny .logo__wrap {
+        max-width: 80%; } }
+    .logo._ny .logo__newyear {
+      display: block; }
 
 .form {
   display: flex;
@@ -511,5 +538,20 @@ label {
     .form__validate._true {
       background: rgba(108, 255, 141, 0.2);
       border-color: rgba(255, 255, 255, 0.2); }
+  .form__snowcaps {
+    position: absolute;
+    max-width: 84%;
+    width: 100%;
+    height: auto;
+    display: none;
+    top: -4%;
+    left: 7%; }
+    @media (max-width: 375px) {
+      .form__snowcaps {
+        top: -3%; } }
+  .form._ny {
+    position: relative; }
+    .form._ny .form__snowcaps {
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */

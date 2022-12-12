@@ -7,9 +7,38 @@
 		margin-bottom: 30px;
 	}
 
+	&__wrap {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
 	& svg {
 		fill: $color_white;
 		max-width: 100%;
 		height: auto;
+	}
+
+	&__newyear {
+		position: absolute;
+		left: -23%;
+		top: -78%;
+		display: none;
+		width: 43%;
+		height: auto;
+	}
+
+	&._ny {
+		padding-top: 66px;
+
+		& .logo__wrap {
+			@media(max-width: 575px) {
+				max-width: 80%;
+			}
+		}
+
+		& .logo__newyear {
+			display: block;
+		}
 	}
 }

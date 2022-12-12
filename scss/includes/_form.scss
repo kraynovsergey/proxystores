@@ -126,4 +126,26 @@
 			border-color: rgba(255, 255, 255, 0.2);
 		}
 	}
+
+	&__snowcaps {
+		position: absolute;
+		max-width: 84%;
+		width: 100%;
+		height: auto;
+		display: none;
+		top: -4%;
+		left: 7%;
+
+		@media (max-width: 375px) {
+			top: -3%;
+		}
+	}
+
+	&._ny {
+		position: relative;
+
+		& .form__snowcaps {
+			display: block;
+		}
+	}
 }
