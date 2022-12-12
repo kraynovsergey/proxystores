@@ -1,0 +1,42 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Авторизация', description: 'Описание страницы авторизации'}
+        include includes/_meta
+    body.body
+        .container.body__content
+            a.logo(href="#")
+                svg(width="366" height="86" viewBox="0 0 366 86" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    use(xlink:href="#svg-logo")
+
+            form.form(action="#" method="post")
+                .form__fieldset.form__validate._false
+                    span.form__validate-title Каптча
+                    | Обязательное поле.
+
+                fieldset.form__fieldset
+                    input.form__input(type="email" name="email" placeholder="E-mail")
+                    svg.form__icon(width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        use(xlink:href="#svg-email")
+
+                fieldset.form__fieldset._mb0
+                    input.form__input(type="password" name="password" placeholder="Пароль")
+                    svg.form__icon(width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        use(xlink:href="#svg-password")
+
+                .form__fieldset.form__forget
+                    a.form__link(href="#") Забыли пароль?
+
+                .form__fieldset.form__recaptcha
+                    img.form__recaptcha-img(src="img/tmp/recaptcha.jpg" width="298" height="72" alt="")
+
+                .form__fieldset.form__submit
+                    button.form__submit-btn(type="submit") Войти
+
+                .form__notice Нет аккаунта? <a href="register.html" class="form__link">Регистрация</a>
+
+        //.body__bg
+            svg(width="1375" height="515" viewBox="0 0 1375 515" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-bg")
+
+        include includes/_svg

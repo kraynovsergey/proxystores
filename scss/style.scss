@@ -1,0 +1,24 @@
+$color_bg: #1B1425;
+$color_bg_input: rgba(255, 255, 255, 0.05);
+$color_border: #545C7C;
+$color_grey: #7D7D7D;
+$color_blue: #00A1E9;
+$color_white: #FFFFFF;
+
+$transition: 0.5s ease;
+
+@import "includes/reboot";
+@import "includes/grid";
+@import "includes/fonts";
+@import "includes/default";
+@import "includes/svg";
+
+@import "includes/body";
+@import "includes/logo";
+@import "includes/form";
+
+
+
+
+
+

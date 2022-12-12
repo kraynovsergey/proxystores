@@ -1,0 +1,15 @@
+.logo {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+
+	@media (max-width: 767px) {
+		margin-bottom: 30px;
+	}
+
+	& svg {
+		fill: $color_white;
+		max-width: 100%;
+		height: auto;
+	}
+}
