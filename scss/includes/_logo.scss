@@ -27,18 +27,4 @@
 		width: 43%;
 		height: auto;
 	}
-
-	&._ny {
-		padding-top: 66px;
-
-		& .logo__wrap {
-			@media(max-width: 575px) {
-				max-width: 80%;
-			}
-		}
-
-		& .logo__newyear {
-			display: block;
-		}
-	}
 }

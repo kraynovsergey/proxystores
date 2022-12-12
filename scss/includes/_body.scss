@@ -50,5 +50,27 @@
 		& .body__ny {
 			display: block;
 		}
+
+		& .logo {
+			padding-top: 66px;
+
+			& .logo__wrap {
+				@media(max-width: 575px) {
+					max-width: 80%;
+				}
+			}
+
+			& .logo__newyear {
+				display: block;
+			}
+		}
+
+		& .form {
+			position: relative;
+
+			& .form__snowcaps {
+				display: block;
+			}
+		}
 	}
 }

@@ -421,6 +421,17 @@ label {
     display: none; }
   .body._ny .body__ny {
     display: block; }
+  .body._ny .logo {
+    padding-top: 66px; }
+    @media (max-width: 575px) {
+      .body._ny .logo .logo__wrap {
+        max-width: 80%; } }
+    .body._ny .logo .logo__newyear {
+      display: block; }
+  .body._ny .form {
+    position: relative; }
+    .body._ny .form .form__snowcaps {
+      display: block; }
 
 .logo {
   display: flex;
@@ -444,13 +455,6 @@ label {
     display: none;
     width: 43%;
     height: auto; }
-  .logo._ny {
-    padding-top: 66px; }
-    @media (max-width: 575px) {
-      .logo._ny .logo__wrap {
-        max-width: 80%; } }
-    .logo._ny .logo__newyear {
-      display: block; }
 
 .form {
   display: flex;
@@ -549,9 +553,5 @@ label {
     @media (max-width: 375px) {
       .form__snowcaps {
         top: -3%; } }
-  .form._ny {
-    position: relative; }
-    .form._ny .form__snowcaps {
-      display: block; }
 
 /*# sourceMappingURL=style.css.map */
